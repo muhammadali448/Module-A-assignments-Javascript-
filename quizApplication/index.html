@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Quiz App</title>
+</head>
+
+<body>
+
+
+  <form onsubmit="checkingAnswers();">
+    <ol>
+      <li>
+        <p>Inside which HTML element do we put the JavaScript?
+          <br>
+          <label>
+            <input type="radio" name="question1" value="script"> &lt;script&gt;
+            <input type="radio" name="question1" value="js"> &lt;js&gt;
+            <input type="radio" name="question1" value="javascript"> &lt;javascript&gt;
+            <input type="radio" name="question1" value="scripting"> &lt;scripting&gt;</label>
+        </p>
+      </li>
+      <li>
+        <p>Inside which HTML element do we put the css styles internally?
+          <br>
+          <label>
+            <input type="radio" name="question2" value="styles"> &lt;styles&gt;
+            <input type="radio" name="question2" value="design"> &lt;design&gt;
+            <input type="radio" name="question2" value="stylesheet"> &lt;stylesheet&gt;
+            <input type="radio" name="question2" value="hehehe"> &lt;hehehe&gt;</label>
+        </p>
+      </li>
+      <li>
+        <p>Which of the following is the correct way of returning the length of this string?
+          <br>
+          <label>
+            <input type="radio" name="question3" value="stringCommaLength">
+            <q>string</q>,length
+            <input type="radio" name="question3" value="stringLength"> string,length;
+            <input type="radio" name="question3" value="stringDotLength"> string.length;
+            <input type="radio" name="question3" value="stringCommaDotLength">
+            <q>string</q>.length</label>
+        </p>
+      </li>
+      <li>
+        <p>Which of the following will correctly comment the text?
+          <br>
+          <label>
+            <input type="radio" name="question4" value="twoForwardSlash"> //
+            <q>the text</q> //
+            <input type="radio" name="question4" value="oneslash"> /
+            <q>the text</q> /
+            <input type="radio" name="question4" value="multipleWrongSlash"> */
+            <q>the text</q> /*
+            <input type="radio" name="question4" value="twoBackSlash"> \\
+            <q>the text</q> \\</label>
+        </p>
+      </li>
+      <li>
+        <p> Which of the following is the correct use of the confirm dialog?
+          <br>
+          <label>
+            <input type="radio" name="question5" value="confirmWrong"> confirm.
+            <q>Hello world</q>;
+            <input type="radio" name="question5" value="confirmQuotesCorrect"> confirm(
+            <q>Hello world</q>);
+            <input type="radio" name="question5" value="confirmWrong2"> confirm.(
+            <q>Hello world</q>);
+            <input type="radio" name="question5" value="confirmWrong3"> confirm[
+            <q>Hello world</q>];</label>
+        </p>
+      </li>
+      <li>
+        <p> What is the function of the prompt dialog?
+          <br>
+          <label>
+            <input type="radio" name="question6" value="askInput"> Asks the user for an input
+            <input type="radio" name="question6" value="askConfirm"> Asks the user to confirm an action
+            <input type="radio" name="question6" value="displayHelp"> Displays a help window
+            <input type="radio" name="question6" value="askAdvice"> Ask the user for advice</label>
+        </p>
+      </li>
+      <li>
+        <p> Which of the following is the correct way to log a statement to the console?
+          <br>
+          <label>
+            <input type="radio" name="question7" value="consolelog"> consolelog(
+            <q>Hello world</q>)
+            <input type="radio" name="question7" value="console.log("> console.log(
+            <q>Hello world</q>)
+            <input type="radio" name="question7" value="console.log{"> console.log{
+            <q>Hello world</q>}
+            <input type="radio" name="question7" value="consolelog"> consolelog(
+            <q>Hello world</q>)</label>
+        </p>
+      </li>
+      <li>
+        <p> Which of the following best describes what a function in JavaScript is used for?
+          <br>
+          <label>
+            <input type="radio" name="question8" value="fNewCreates"> A function creates new variables
+            <input type="radio" name="question8" value="fMathFormula"> A function is used for math formulas
+            <input type="radio" name="question8" value="reuseable"> A reusable piece of code that can be called on throughout an application
+            <input type="radio" name="question8" value="fMathOperators"> A function allows for the use of mathematical operators</label>
+        </p>
+      </li>
+      <li>
+        <p> Which of the following is the end condition for this for loop?
+          <code>
+                 <br> for (var condition = 0; condition &lt; 5; condition ++) { <br>
+                    return condition; <br>
+                   };
+              </code>
+          <br>
+          <label>
+            <input type="radio" name="question9" value="condition0"> condition = 0
+            <input type="radio" name="question9" value="condition++"> condition ++
+            <input type="radio" name="question9" value="returnCondition"> return condition
+            <input type="radio" name="question9" value="conditionLess5"> condition &lt; 5</label>
+        </p>
+      </li>
+      <li>
+        <p> Which of the following best describes what a array in JavaScript is used for?
+          <br>
+          <label>
+            <input type="radio" name="question10" value="vCreatFunc"> A variable that can create functions
+            <input type="radio" name="question10" value="vStoreListData"> A variable that can store a list of different data seperately
+            <input type="radio" name="question10" value="dataStoreDatas"> A data type that can store datas
+            <input type="radio" name="question10" value="dataCreateFunc"> A data type that can create functions</label>
+        </p>
+      </li>
+    </ol>
+    <br>
+    <button type="submit">Submit answers</button>
+  </form>
+  <script src="logic.js"></script>
+</body>
+</html>
