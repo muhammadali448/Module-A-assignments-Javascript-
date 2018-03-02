@@ -80,11 +80,11 @@ for (var i = 0; i <= 20; i = i + 2){
   document.write(`${i},`);
 }
 document.write('<br><br><strong>Odd:</strong><br><br>');
-for (var i = 1; i < 20; i = i = i + 2){
+for (var i = 1; i < 20;  i = i + 2){
   document.write(`${i},`);
 }
 document.write('<br><br><strong>Series:</strong><br><br>');
-for (var i = 2; i <= 20; i = i = i + 2){
+for (var i = 2; i <= 20;  i = i + 2){
   document.write(`${i}k,`);
 }
 document.write('</p>');
