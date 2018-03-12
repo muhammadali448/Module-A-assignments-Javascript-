@@ -67,7 +67,55 @@
     </table>
     <br>
     <input type="button" onclick="insert_Row()" value="Insert row">
-
+  </div>
+  <div class="tasks">
+    <h3>Task 6</h3>
+    <table id="myTable" border="1">
+      <tr>
+        <td>Row1 cell1</td>
+        <td>Row1 cell2</td>
+      </tr>
+      <tr>
+        <td>Row2 cell1</td>
+        <td>Row2 cell2</td>
+      </tr>
+      <tr>
+        <td>Row3 cell1</td>
+        <td>Row3 cell2</td>
+      </tr>
+    </table>
+    <h3>Fill these inputs to update data</h3>
+    <form>
+      <input type="text" placeholder="Enter row no" id="roww" required>
+      <input type="text" placeholder="Enter col no" id="coll" required>
+      <input type="text" placeholder="Enter String to update" id="upText" required>
+      <input type="submit" onclick="changeContent()" value="Change content">
+    </form>
+  </div>
+  <div class="tasks">
+    <h3>Task 7</h3>
+    <select id="colorSelect">
+      <option>Red</option>
+      <option>Green</option>
+      <option>White</option>
+      <option>Black</option>
+    </select>
+    <input type="button" onclick="removecolor()" value="Select and Remove">
+  </div>
+  <div class="tasks">
+    <h3>Task 8</h3>
+    Select your favorite Color :
+    <select id="mySelect">
+      <option>Red</option>
+      <option>Green</option>
+      <option>Blue</option>
+      <option>White</option>
+    </select>
+    <input type="button" onclick="getOptions()" value="Count and Output all items">
+  </div>
+  <div class="tasks">
+    <h3>Task 9</h3>
+    <p onmouseover="makeHighlight();" onmouseout="makeNormal();" id="paraHigh"><strong>We</strong> have just started <strong>this</strong> section for the users (<strong>beginner</strong> to intermediate) who <strong>want</strong> to work with <strong>various</strong> JavaScript <strong>problems</strong> and write scripts online to <strong>test</strong> their JavaScript <strong>skill</strong>.</p>
   </div>
   <script src="logic.js"></script>
 </body>
