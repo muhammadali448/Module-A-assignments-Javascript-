@@ -40,17 +40,18 @@ function getAttributes() {
 }
 
 // Task 5
+let row = 3 , col = 1;
 function insert_Row() {
   const selectTable = document.getElementById('sampleTable');
   const newRow = document.createElement('tr');
   const newCol1 = document.createElement('td');
   const newCol2 = document.createElement('td');
-  let row = 3 , col = 1;
   newCol1.textContent = 'Row' + (row) + 'Col' + (col);
-  col++;
-  newCol2.textContent = 'Row' + (row++) + 'Col' + (col++);
-  row++;
+  ++col;
+  newCol2.textContent = 'Row' + (row) + 'Col' + (col);
   newRow.appendChild(newCol1);
   newRow.appendChild(newCol2);
   selectTable.appendChild(newRow);
+  ++row;
+  col = 1;
 }
