@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>DOM</title>
+  <style>
+    .tasks {
+      width: 580px;
+      border: 3px solid blue;
+      padding: 7px;
+      margin: 8px;
+    }
+
+    .changeFont {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 3em;
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="tasks">
+    <h3>Task 1</h3>
+    <p id='text'>Change my font by clicking style</p>
+    <button id="jsstyle" onclick="js_style()">Style</button>
+  </div>
+  <div class="tasks" id="task2">
+    <h3>Task 2</h3>
+    <form id="form1" onsubmit="return getFormvalue()">
+      First name:
+      <input type="text" name="fname" value="David">
+      <br> Last name:
+      <input type="text" name="lname" value="Beckham">
+      <br>
+      <input type="submit" value="Submit">
+  </div>
+  <div class="tasks" id="task3">
+    <h3>Task 3</h3>
+    <input type="button" value="Click to set paragraph background color" onclick="set_background()">
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Hic adipisci placeat, temporibus aut quidem numquam consequatur
+      beatae similique id ab omnis sint consectetur praesentium quod, minus sunt dolor est quia.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente ullam voluptatem, nostrum commodi natus libero corrupti
+      odio expedita? Ratione, repudiandae similique labore consectetur reiciendis ducimus magni temporibus nulla esse saepe?</p>
+  </div>
+  <div class="tasks" id="task4">
+    <h3>Task 4</h3>
+    <p>
+      <a id="w3r" type="text/html" hreflang="en-us" rel="nofollow" target="_self" href="http://www.w3resource.com/">w3resource</a>
+    </p>
+    <button onclick="getAttributes()">Click here to get attributes value</button>
+  </div>
+  <div class="tasks">
+    <h3>Task 5</h3>
+    <table id="sampleTable" border="1">
+      <tr>
+        <td>Row1 cell1</td>
+        <td>Row1 cell2</td>
+      </tr>
+      <tr>
+        <td>Row2 cell1</td>
+        <td>Row2 cell2</td>
+      </tr>
+    </table>
+    <br>
+    <input type="button" onclick="insert_Row()" value="Insert row">
+
+  </div>
+  <script src="logic.js"></script>
+</body>
+
+</html>
