@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Firebase todo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0 , minimum-scale=1.0">
+  <link rel="shortcut icon" href="images/shortCutIcon2.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Todo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="/" style="visibility: hidden;" id="logout">Logout</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+
+  <div class="container" id="alert" style="display: none;">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="alert alert-info">
+          <strong>Please Enter Todo</strong>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container setting">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="inner-addon right-addon">
+          <i class="glyphicon glyphicon-plus-sign" style="color: white;"></i>
+          <h3 class="text-capitalize setMainHead setRad">todo list</h3>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="inner-addon left-addon">
+          <i class="glyphicon glyphicon-pencil"></i>
+          <label for="item" class="sr-only">Enter todo item</label>
+          <input type="text" class="form-control setRad" id="itemText" placeholder="Add New Todo" name="item" required>
+        </div>
+        <img src="images/addBtn3.png" class="pull-right" id="addBtn" onclick="addItem();" style="margin-top: 5px;">
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <ul class="list-group" id="toDoList"></ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCHiUagkEqOly5jZPzlK1ntpK711R3U8Mw",
+      authDomain: "todoexample-619b7.firebaseapp.com",
+      databaseURL: "https://todoexample-619b7.firebaseio.com",
+      projectId: "todoexample-619b7",
+      storageBucket: "todoexample-619b7.appspot.com",
+      messagingSenderId: "406170118253"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="scripts/logic3.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="scripts/jquery-3.2.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="scripts/bootstrap.min.js"></script>
+
+</body>
+
+</html>

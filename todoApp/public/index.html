@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Firebase todo App</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 , maximum-scale=1.0 , minimum-scale=1.0">
+  <link rel="shortcut icon" href="images/shortCutIcon2.png">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">Todo</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    
+    <!-- /.navbar-collapse -->
+  </nav>
+  <div class="container setting">
+    <h3 class="text-center">Account Sign in</h3>
+
+    <div class="form-group row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="inner-addon left-addon">
+          <i class="glyphicon glyphicon-envelope"></i>
+          <label for="email" class="sr-only">Email</label>
+          <input type="email" class="form-control" id="email" placeholder="johnsmith@example.com" name="email" required>
+        </div>
+      </div>
+    </div>
+    <div class="form-group row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <div class="inner-addon left-addon">
+          <i class="glyphicon glyphicon-lock"></i>
+          <label for="password" class="sr-only">Password</label>
+          <input type="password" class="form-control" id="password" placeholder="Password" required name="password">
+        </div>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-xs-12 col-sm-6 col-sm-offset-3">
+        <button type="button" id="loginBtn" class="btn btn-primary btn-sm">Sign in</button>
+        <button type="button" id="signupBtn" class="btn btn-primary btn-sm">Sign up</button>
+      </div>
+    </div>
+  </div> 
+  <script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+  <script>
+    // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyCHiUagkEqOly5jZPzlK1ntpK711R3U8Mw",
+      authDomain: "todoexample-619b7.firebaseapp.com",
+      databaseURL: "https://todoexample-619b7.firebaseio.com",
+      projectId: "todoexample-619b7",
+      storageBucket: "todoexample-619b7.appspot.com",
+      messagingSenderId: "406170118253"
+    };
+    firebase.initializeApp(config);
+  </script>
+  <script src="scripts/logic4.js"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="scripts/jquery-3.2.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="scripts/bootstrap.min.js"></script>
+
+</body>
+
+</html>

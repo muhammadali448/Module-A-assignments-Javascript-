@@ -1,0 +1,85 @@
+body {
+  background-image: url('../images/backHome.jpg'); 
+  /* background: no-repeat center center fixed; */
+   background-repeat: no-repeat; 
+   background-position: center center;
+  background-attachment: fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover; 
+  background-size: cover;
+  height: 100%;
+  /* overflow: hidden; */
+}
+
+
+
+
+a {
+  color: rgb(14, 23, 41);
+}
+
+.setting {
+  margin-top: 5%;
+}
+
+@media all and (max-width:480px) {
+  .custom-class { width: 100%; display:block; margin-bottom: 1vh; }
+}
+
+
+/* enable absolute positioning */
+.inner-addon {
+  position: relative;
+}
+
+
+
+
+/* style glyph */
+.inner-addon .glyphicon {
+  position: absolute;
+  padding: 10px;
+  pointer-events: none;
+}
+
+
+
+/* align glyph */
+.left-addon .glyphicon  { left:  0px; top: 3px;}
+.right-addon .glyphicon { right: 0px; top: 7px;}
+
+/* add padding  */
+.left-addon input  { padding-left:  30px; }
+/* .right-addon input { padding-right: 30px; } */
+
+.setMainHead {
+  background-color: crimson;
+  color: white;
+  margin: 0;
+  padding: 10px 20px;
+}
+
+.setRad {
+  border-radius: 15px;
+  
+}
+
+
+
+/* li:nth-of-type(even) {
+  background-color: rgb(211, 217, 241);
+}
+
+li:nth-of-type(odd) {
+  background-color: rgb(231, 201, 238);
+} */
+
+input:focus {
+  border: 3px solid rgb(71, 111, 221);
+
+}
+
+span {
+  width: 30px;
+}
