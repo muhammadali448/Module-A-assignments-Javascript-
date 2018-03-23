@@ -14,16 +14,18 @@ loginBtn.addEventListener('click', e => {
   const passwordValue = password.value;
   const auth = firebase.auth();
   const promise = auth.signInWithEmailAndPassword(emailValue, passwordValue);
-  promise.then(e => window.location.replace('https://todoexample-619b7.firebaseapp.com/todo.html'))
+  promise.then(e => window.location.replace('https://todo-application-5890c.firebaseapp.com/todo.html'))
   promise.catch(e => alert(e.message));
 });
+// dlnalkdnlkadna
+
 
 signupBtn.addEventListener('click', e => {
   const emailValue = email.value;
   const passwordValue = password.value;
   const auth = firebase.auth();
   const promise = auth.createUserWithEmailAndPassword(emailValue, passwordValue);
-  promise.then(e => window.location.replace('https://todoexample-619b7.firebaseapp.com/todo.html'));
+  promise.then(e => window.location.replace('https://todo-application-5890c.firebaseapp.com/todo.html'));
   promise.catch(e => alert(e.message));
 });
 
